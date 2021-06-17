@@ -1,0 +1,27 @@
+
+#Putting code to github repository
+steps -
+1. Create Account in Github -
+      Usernane - pradeep8494(My userName)
+2. Create New Repository --> it's file name in Github
+3. Install git --> is software used to connect our local system to github
+# this two commands have to enter once after installing github
+4. git config --global user.name "pradeep"
+5. git config --global user.mail "pradeepssnd75@gmail.com"
+#every time if we want to push have to follow this command
+6. git init
+7. git add .
+8. git commit -m "First commit or any message"
+
+#Now the all files are ready to push git hub but how??? --> ans - Have to connect our local system with git via ssh
+#first create ssh key in local system via below mentioned commands
+9. ssh-keygen -t rsa -b 4096 -C "pradeepssnd75@gmail.com"
+10. past the ssh key into git hub (in settings -- ssh key here we have to add )
+
+
+# now we ready to connect and push
+11. git branch -M main # initally the branch is master so we need to change to main
+# Have to connect with
+12. git remote add origin git@github.com:pradeep8494/Python_codes.git # optional
+13. git remote add origin git@github.com:pradeep8494/general.git
+13. git push -u origin main
